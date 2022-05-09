@@ -1,5 +1,5 @@
 ## Reference repo:
-https://github.com/c17hawke/dvc-ML-demo-AIOps
+https://github.com/rukhaiyarshivam/dvc_ml
 
 ## wokflow -
 <img src="others/images/simple-workflow-01@2x.png" alt="workflow" width="70%">
