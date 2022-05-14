@@ -13,3 +13,8 @@ def createDirectory(dirs:List):
     for dir_path in dirs:
         os.makedirs(dir_path,exist_ok=True)
 
+
+def save_local_df(data,data_path,index_status=False):
+    data.to_csv(data_path,index=index_status)
+    print('Data is saved at {}'.format(data_path))
+
