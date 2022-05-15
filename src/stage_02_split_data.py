@@ -1,3 +1,4 @@
+from ast import If
 import os
 from src.utils.all_utils import read_yaml,createDirectory,save_local_df
 import argparse
@@ -10,7 +11,7 @@ def split_and_save(config_path,params_path):
   params=read_yaml(params_path)
   artifacts_directory=config['artifacts']['artifacts_dir']
   artifacts_local_dir=config['artifacts']['raw_local_dir']
-  artifacts_local_file=config['artifacts']['raw_local_file']
+  artifacts_local_file=config['artifacts']['raw_local_file'] 
 
 
   # save dataset in local directory

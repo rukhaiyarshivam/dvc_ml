@@ -7,7 +7,10 @@ def get_data(config_path):
   print(config_path)
   config=read_yaml(config_path)
   remote_data_path=config['data_source']
-  df=pd.read_csv(remote_data_path,sep=";")
+  if remote_data_path.endswith("csv"):
+    df=pd.read_csv(remote_data_path,sep=";")
+  elif remote_data_path.endswith("data"):
+    df=pd.read_fwf(remote_data_path)
   artifacts_directory=config['artifacts']['artifacts_dir']
   artifacts_local_dir=config['artifacts']['raw_local_dir']
   artifacts_local_file=config['artifacts']['raw_local_file']
