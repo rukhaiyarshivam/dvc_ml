@@ -1,6 +1,7 @@
 
-data_source: https://archive.ics.uci.edu/ml/machine-learning-databases/thyroid-disease/hypothyroid.data
-#http://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv
+data_source: http://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv
+#https://archive.ics.uci.edu/ml/machine-learning-databases/thyroid-disease/hypothyroid.data
+
 
 artifacts: 
   artifacts_dir: artifacts
@@ -10,4 +11,7 @@ artifacts:
   split_data_dir: split_data_dir
   train: train.csv
   test: test.csv
+
+  model_dir: model_dir
+  model_file: ElasticNet.model
   
